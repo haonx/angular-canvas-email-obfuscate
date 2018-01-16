@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div ng-app="App" ng-controller="Ctrl">
+    <div style="font-size: 40px;font-family: Arial, sans-serif" email-obfuscate="emailAddress"></div>
+</div>
+<script src="https://unpkg.com/angular@1.6.6/angular.min.js"></script>
+<script src="https://unpkg.com/email-obfuscate@0.0.6/lib/emailObfuscate.js"></script>
+<script src="../angular-email-obfuscate.js"></script>
+<script>
+    angular.module("App", ["email.obfuscate"]).controller("Ctrl", ["$scope", function (scope) {
+        scope.emailAddress = {
+            // Email construct: name@domain.tld
+            name: "test",
+            domain: "example",
+            tld: "com",
+            // Alternate Text
+            altText: "Email"
+        };
+    }]);
+</script>
+</body>
+
+</html>

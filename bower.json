@@ -1,0 +1,21 @@
+{
+  "name": "angular-canvas-email-obfuscate",
+  "homepage": "https://github.com/haonx/angular-canvas-email-obfuscate",
+  "authors": [
+    "haonx <qtvhao@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "email-obfuscate": "https://unpkg.com/email-obfuscate@0.0.6/lib/emailObfuscate.js",
+    "angular": "1.6.6"
+  }
+}
